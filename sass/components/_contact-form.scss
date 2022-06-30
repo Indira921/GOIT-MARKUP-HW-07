@@ -78,15 +78,21 @@
     color: var(--secondary-accent-color);
     cursor: pointer;
 }
+@media screen and (min-width: 1200px) {
+    .policy-checkbox {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
 .modal-icon-check {
     position: relative;
-    margin-right: 7px;
+    margin-right: 5px;
     border: 2px solid var(--main-text-color);
-    border-radius: 2px;
+    border-radius: 4px;
     width: 16px;
-    height: 15px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    height: 16px;
+    transition: background-color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
     
 .checkbox:checked + & {
     background-size: contain;
@@ -100,14 +106,6 @@
 }
 }
 
-.checkbox {
-    position: relative;
-    margin-right: 7px;
-    border: 2px solid var(--main-text-color);
-    border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .policy-link {
     font-weight: 400;
     font-size: 14px;

@@ -74,7 +74,7 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition: 250ms var(--timing-function);
+    transition: background-color 250ms var(--timing-function);
 
 &:hover,
 &:focus {
@@ -84,6 +84,7 @@
 
 .social-links__link .social-links__icon {
     fill: #AFB1B8;
+    transition: fill 250ms var(--timing-function);
 }
 .social-links__link:hover .social-links__icon,
 .social-links__link:focus .social-links__icon {

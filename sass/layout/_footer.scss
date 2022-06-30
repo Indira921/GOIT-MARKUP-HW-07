@@ -16,11 +16,8 @@
     align-items: baseline; 
 }
 .address-container {
-    display: inline-block;
     align-items: baseline;
-    margin-left: 0;
 }
-
 .address {
     margin-top: 20px;
     margin-bottom: 0;
@@ -91,6 +88,7 @@
     margin-top: 0;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms var(--timing-function);
     &:hover,
     &:focus {
     background-color: var(--accent-color);
@@ -100,8 +98,6 @@
     fill: var(--secondary-text-color);
     transition: color 250ms var(--timing-function);
 }
-
-
 
 /* ПОДПИШИТЕСЬ НА РАССЫЛКУ*/
 .footer__form{
@@ -181,5 +177,5 @@
     padding-left: 29px;
 }
 .footer__form__icon {
-    padding-left: 10px;
+    margin-left: 10px;
 }

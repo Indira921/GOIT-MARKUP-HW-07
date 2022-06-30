@@ -6,11 +6,10 @@ html {
 *::after {
     box-sizing: inherit;
 }
-
 body {
     margin: 0;
     background-color: white;
-    font-family: var(--primary-font-family)
+    font-family: var(--primary-font-family);
 }
 ol, ul {
     margin-top: 0;
@@ -36,3 +35,4 @@ h4 {
 img {
     display: block;
 }
+

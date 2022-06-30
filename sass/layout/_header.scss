@@ -37,19 +37,20 @@
     color: var(--main-text-color); 
     padding-top: 32px;
     padding-bottom: 32px;
-    transition: 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
     
     &:hover,
     &:focus {
-    transition: 250ms var(--timing-function);
     color: var(--accent-color);
 }
+}
+.current {
+    color: var(--accent-color);
 }
 
-.site-nav__link .current {
+.site-nav__link.current {
     color: var(--accent-color);
-    
-    &::after {
+    &:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -78,7 +79,7 @@
 .contacts-links__icon {
     margin-right: 10px;
     fill: var(--secondary-accent-color);
-    transition: 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function);
 
 .site-nav__link:hover  &,
 .site-nav__link:focus & {
